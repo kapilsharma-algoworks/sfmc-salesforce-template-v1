@@ -15,9 +15,31 @@
     },
     "arguments": {
         "execute": {
-           "inArguments":[],
-          "outArguments": [],
-          "url": "https://<your-domain-here>/journeybuilder/execute",
+           "inArguments": [
+        {
+          "contactIdentifier": "{{Contact.Key}}"
+        },
+        {
+          "emailAddress": "{{InteractionDefaults.Email}}"
+        },
+        {
+          "twitterHandle": "{{Contact.Default.Twitter}}"
+        },
+        {
+          "lastLogin": "{{Contact.Attribute.Engagement.LastLogin}}"
+        }
+      ],
+      "outArguments": [
+        {
+          "foundSignupDate": ""
+        }
+      ],
+         "outArguments": [
+        {
+          "foundSignupDate": ""
+        }
+      ],
+          "url": "https://poojarajput19-dev-ed.my.salesforce.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
