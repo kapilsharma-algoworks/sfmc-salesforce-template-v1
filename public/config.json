@@ -1,91 +1,92 @@
 {
-    "workflowApiVersion": "1.1",
-    "metaData": {
-        "icon": "images/icon.png",
-        "iconSmall": "images/iconSmall.png",
-        "category": "message"
-    },
-    "type": "REST",
-    "lang": {
-        "en-US": {
-            "name": "SFMC custom activity template",
-          "description": "A Template for a custom Journey Builder activity",
-          "step1Label": "Configure Activity"
-        }
-    },
-    "arguments": {
-        "execute": {
-           "inArguments": [
-        {
-          "contactIdentifier": "{{Contact.Key}}"
-        },
-        {
-          "emailAddress": "{{InteractionDefaults.Email}}"
-        },
-        {
-          "twitterHandle": "{{Contact.Default.Twitter}}"
-        },
-        {
-          "lastLogin": "{{Contact.Attribute.Engagement.LastLogin}}"
-        }
-      ],
-      "outArguments": [
-        {
-          "foundSignupDate": ""
-        }
-      ],
-         "outArguments": [
-        {
-          "foundSignupDate": ""
-        }
-      ],
-          "url": "https://poojaktp955-developer-edition.ap16.force.com/sfmc",
-           "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 10000
-        }
-    },
-    "configurationArguments": {
-      "save": {
-        "url": "https://<your-domain-here>/journeybuilder/save",
-          "verb": "POST",
-        "useJwt": true
-       },
-       "publish": {
-        "url": "https://<your-domain-here>/journeybuilder/publish",
-           "verb": "POST",
-        "useJwt": true
-       },
-      "stop": {
-        "url": "https://<your-domain-here>/journeybuilder/stop",
-           "verb": "POST",
-        "useJwt": true
-      },
-      "validate": {
-        "url": "https://<your-domain-here>/journeybuilder/validate",
-        "verb": "POST",
-        "useJwt": true
-      }
-    },
-    "wizardSteps": [
-        { "label": "Configure Activity", "key": "step1" }
-    ],
-    "userInterfaces": {
-        "configModal": {
-            "height": 400,
-            "width": 1000,
-          "fullscreen": false
-        }
-    },
-    "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [],
-                "outArguments": []
-            }
-        }
-    }
+	"key": "<YOUR APPLICATION EXTENSION KEY HERE>",
+	"metaData": {
+		"icon": "images/icon.png",
+		"iconSmall": "images/icon_small.png"
+	},
+	"type": "RESTDECISION",
+	"lang": {
+		"en-US": {
+			"name": "Service Cloud Custom Split",
+			"description": "Custom Split activity that makes a decision based on data from Service Cloud"
+		}
+	},
+	"workflowApiVersion": "1.1",
+	"configurationArguments": {
+		"applicationExtensionKey": "<YOUR APPLICATION EXTENSION KEY HERE>",
+		"save": {
+			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"verb": "POST",
+			"body": "",
+			"useJwt": true,
+			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
+		},
+		"publish": {
+			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"verb": "POST",
+			"body": "",
+			"useJwt": true,
+			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
+		},
+		"validate": {
+			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"verb": "POST",
+			"body": "",
+			"useJwt": true,
+			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
+		}
+	},
+	"wizardSteps": [
+		{"key": "eventdefinitionkey", "label": "Event Definition Key"},
+		{"key": "idselection", "label": "ID Selection"}
+	],
+	"outcomes": [
+		{
+			"arguments": {
+				"branchResult": "<KEY FOR PATH 1>"
+			},
+			"metaData": {
+				"label": "<LABEL FOR PATH 1>"
+			}
+		},
+		{
+			"arguments": {
+				"branchResult": "<KEY FOR PATH 2>"
+			},
+			"metaData": {
+				"label": "<LABEL FOR PATH 2>"
+			}
+		}
+	],
+	"userInterfaces": {
+		"runningModal": {
+			"url": "runningModal.html"
+		},
+		"runningHover": {
+			"url": "runningHover.html"
+		}
+	},
+	"arguments": {
+		"execute": {
+			"inArguments": [],
+			"outArguments": [],
+			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"verb": "POST",
+			"body": "",
+			"header": "",
+			"format": "json",
+			"useJwt": true,
+			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>",
+			"timeout": 90000,
+			"retryCount": 5,
+			"retryDelay": 100
+		}
+	},
+	"edit": {
+		"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+		"height": 200,
+		"width": 500
+	}
 }
+Footer
+© 2022 GitHub, Inc.
