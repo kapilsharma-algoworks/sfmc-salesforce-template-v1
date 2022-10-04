@@ -17,10 +17,10 @@
 		"save": {
 			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
 			"verb": "POST",
-			"body": "{
+			"body": {
   "name" : "Wingo Ducks1",
   "phone" : "707-555-1234"
-}",
+},
 			"useJwt": true,
 			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
 		},
@@ -37,10 +37,10 @@
 		"validate": {
 			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
 			"verb": "POST",
-			"body": '{
+			"body": {
   "name" : "Wingo Ducks3",
   "phone" : "707-555-1234"
-}',
+},
 			"useJwt": true,
 			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
 		}
