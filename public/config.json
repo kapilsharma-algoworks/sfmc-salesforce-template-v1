@@ -1,5 +1,5 @@
 {
-	"key": "<YOUR APPLICATION EXTENSION KEY HERE>",
+	"key": "703f93b2-4658-420a-82c6-0591979aa86e",
 	"metaData": {
 		"icon": "images/icon.png",
 		"iconSmall": "images/icon_small.png"
@@ -13,7 +13,7 @@
 	},
 	"workflowApiVersion": "1.1",
 	"configurationArguments": {
-		"applicationExtensionKey": "<YOUR APPLICATION EXTENSION KEY HERE>",
+		"applicationExtensionKey": "703f93b2-4658-420a-82c6-0591979aa86e",
 		"save": {
 			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
 			"verb": "POST",
@@ -22,7 +22,7 @@
   "phone" : "707-555-1234"
 },
 			"useJwt": true,
-			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
+			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8"
 		},
 		"publish": {
 			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
@@ -32,7 +32,7 @@
   "phone" : "707-555-1234"
 },
 			"useJwt": true,
-			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
+			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8"
 		},
 		"validate": {
 			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
@@ -42,7 +42,7 @@
   "phone" : "707-555-1234"
 },
 			"useJwt": true,
-			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>"
+			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8"
 		}
 	},
 	"wizardSteps": [
@@ -85,7 +85,7 @@
 			"header": "",
 			"format": "json",
 			"useJwt": true,
-			"customerKey": "<c65f442f-5246-428b-a0d9-4454f81d67a8>",
+			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8",
 			"timeout": 90000,
 			"retryCount": 5,
 			"retryDelay": 100
