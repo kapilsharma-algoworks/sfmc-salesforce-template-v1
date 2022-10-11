@@ -5,6 +5,8 @@
 		"iconSmall": "images/icon_small.png"
 	},
 	"type": "RESTDECISION",
+	"name" : "Test",
+	"eventDefinitionKey" : "703f93b2-4658-420a-82c6-0591979aa86e",
 	"lang": {
 		"en-US": {
 			"name": "Service Cloud Custom Split",
