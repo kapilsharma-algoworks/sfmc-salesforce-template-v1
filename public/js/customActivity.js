@@ -1,6 +1,7 @@
 'use strict';
 
 define(function (require) {
+	debugger;
 	var Postmonger = require('postmonger');
 	var connection = new Postmonger.Session();
 	var payload = {};
