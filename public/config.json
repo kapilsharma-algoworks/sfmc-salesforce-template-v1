@@ -24,7 +24,7 @@
   "phone" : "707-555-1234"
 },
 			"useJwt": true,
-			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8"
+			"customerKey": "39296ff5-94cc-403c-b7dc-ceabca5991e2"
 		},
 		"publish": {
 			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
@@ -34,7 +34,7 @@
   "phone" : "707-555-1234"
 },
 			"useJwt": true,
-			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8"
+			"customerKey": "39296ff5-94cc-403c-b7dc-ceabca5991e2"
 		},
 		"validate": {
 			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
@@ -44,7 +44,7 @@
   "phone" : "707-555-1234"
 },
 			"useJwt": true,
-			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8"
+			"customerKey": "39296ff5-94cc-403c-b7dc-ceabca5991e2"
 		}
 	},
 	"wizardSteps": [
@@ -87,7 +87,7 @@
 			"header": "",
 			"format": "json",
 			"useJwt": true,
-			"customerKey": "c65f442f-5246-428b-a0d9-4454f81d67a8",
+			"customerKey": "39296ff5-94cc-403c-b7dc-ceabca5991e2",
 			"timeout": 90000,
 			"retryCount": 5,
 			"retryDelay": 100
