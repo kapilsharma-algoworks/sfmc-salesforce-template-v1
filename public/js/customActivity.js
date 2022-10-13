@@ -1,5 +1,5 @@
 'use strict';
-
+debugger;
 define(function (require) {
 	debugger;
 	var Postmonger = require('postmonger');
@@ -52,10 +52,12 @@ define(function (require) {
 
 		switch (currentStep.key) {
 		case 'eventdefinitionkey':
+				debugger;
 			$('#step1').show();
 			$('#step1 input').focus();
 			break;
 		case 'idselection':
+				debugger;
 			$('#step2').show();
 			$('#step2 input').focus();
 			break;
