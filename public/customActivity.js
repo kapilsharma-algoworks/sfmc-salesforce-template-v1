@@ -1,5 +1,5 @@
 'use strict';
-
+debugger;
 define(function (require) {
 	debugger;
 	var Postmonger = require('postmonger');
