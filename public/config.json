@@ -48,8 +48,8 @@
 		}
 	},
 	"wizardSteps": [
-		{"key": "eventdefinitionkey", "label": "Event Definition Key"},
-		{"key": "idselection", "label": "ID Selection"}
+		{"key": "eventdefinitionkey", "label": "Event Definition Key in config.json"},
+		{"key": "idselection", "label": "ID Selection in config.json"}
 	],
 	"outcomes": [
 		{
