@@ -19,6 +19,7 @@ const jsforce = require('jsforce');
  */
 class ServiceCloud {
 	constructor (options) {
+		debugger;
 		this.username = options.username;
 		this.password = options.password;
 		this.loginUrl = options.loginUrl;
