@@ -1,12 +1,13 @@
 'use strict';
 
 define(function (require) {
+	debugger;
 	var Postmonger = require('postmonger');
 	var connection = new Postmonger.Session();
 	var payload = {};
 	var steps = [
-		{'key': 'eventdefinitionkey', 'label': 'Event Definition Key'},
-		{'key': 'idselection', 'label': 'ID Selection'}
+		{'key': 'eventdefinitionkey', 'label': 'Event Definition Key in customActivity.js in public'},
+		{'key': 'idselection', 'label': 'ID Selection in customActivity.js in public'}
 	];
 	var currentStep = steps[0].key;
 	var eventDefinitionKey = '';
