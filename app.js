@@ -1,6 +1,7 @@
 'use strict';
 // Module Dependencies
 // -------------------
+debugger;
 var express     = require('express');
 var bodyParser  = require('body-parser');
 var errorhandler = require('errorhandler');
