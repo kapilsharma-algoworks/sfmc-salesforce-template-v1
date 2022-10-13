@@ -2,11 +2,12 @@
 
 // Deps
 var activity = require('./activity');
-
+debugger;
 /*
  * GET home page.
  */
 exports.index = function(req, res){
+    debugger;
     if( !req.session.token ) {
         res.render( 'index', {
             title: 'Unauthenticated',
@@ -21,10 +22,12 @@ exports.index = function(req, res){
 };
 
 exports.login = function( req, res ) {
+    debugger;
     console.log( 'req.body: ', req.body );
     res.redirect( '/' );
 };
 
 exports.logout = function( req, res ) {
+    debugger;
     req.session.token = '';
 };
