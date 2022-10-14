@@ -9,7 +9,7 @@
 	"eventDefinitionKey" : "703f93b2-4658-420a-82c6-0591979aa86e",
 	"lang": {
 		"en-US": {
-			"name": "Service Cloud Custom Split",
+			"name": "Service Cloud Custom Split in public in config.json",
 			"description": "Custom Split activity that makes a decision based on data from Service Cloud"
 		}
 	},
@@ -27,7 +27,7 @@
 			"customerKey": "39296ff5-94cc-403c-b7dc-ceabca5991e2"
 		},
 		"publish": {
-			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Account",
 			"verb": "POST",
 			"body": {
   "name" : "Wingo Ducks2",
@@ -81,7 +81,7 @@
 		"execute": {
 			"inArguments": [],
 			"outArguments": [],
-			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Opportunity",
 			"verb": "POST",
 			"body": "",
 			"header": "",
@@ -94,7 +94,7 @@
 		}
 	},
 	"edit": {
-		"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+		"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Lead",
 		"height": 200,
 		"width": 500
 	}
