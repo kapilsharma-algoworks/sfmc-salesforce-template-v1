@@ -17,7 +17,7 @@
 	"configurationArguments": {
 		"applicationExtensionKey": "703f93b2-4658-420a-82c6-0591979aa86e",
 		"save": {
-			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"url": "https://sfmc-customactivity-template.herokuapp.com/activity/save",
 			"verb": "POST",
 			"body": {
   "name" : "Wingo Ducks1",
@@ -27,7 +27,7 @@
 			"customerKey": "39296ff5-94cc-403c-b7dc-ceabca5991e2"
 		},
 		"publish": {
-			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Account",
+			"url": "https://sfmc-customactivity-template.herokuapp.com/activity/publish",
 			"verb": "POST",
 			"body": {
   "name" : "Wingo Ducks2",
@@ -37,7 +37,7 @@
 			"customerKey": "39296ff5-94cc-403c-b7dc-ceabca5991e2"
 		},
 		"validate": {
-			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Contact",
+			"url": "https://sfmc-customactivity-template.herokuapp.com/activity/validate",
 			"verb": "POST",
 			"body": {
   "name" : "Wingo Ducks3",
@@ -81,7 +81,7 @@
 		"execute": {
 			"inArguments": [],
 			"outArguments": [],
-			"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Opportunity",
+			"url": "https://sfmc-customactivity-template.herokuapp.com/activity/execute",
 			"verb": "POST",
 			"body": "",
 			"header": "",
@@ -94,7 +94,7 @@
 		}
 	},
 	"edit": {
-		"url": "https://poojarajput19-dev-ed.my.salesforce.com/services/apexrest/Lead",
+		"url": "https://sfmc-customactivity-template.herokuapp.com/index.html",
 		"height": 200,
 		"width": 500
 	}
