@@ -20,9 +20,12 @@ debugger;
 class ServiceCloud {
 	constructor (options) {
 		debugger;
-		this.username = options.username;
-		this.password = options.password;
-		this.loginUrl = options.loginUrl;
+		/*this.username = options.username;
+		this.password = options.password;*/
+		this.username: 'poojaktp955@gmail.com',
+ 	 	this.password: 'Poojaktp@19',
+		//this.loginUrl = options.loginUrl;
+		this.loginUrl: 'https://login.salesforce.com'
 		this.conn = {};
 	}
 
